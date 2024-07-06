@@ -8,7 +8,7 @@ export default function Footer () {
         <div className="ender">
         <div style={{textAlign:' center',color:' #FFF'}}>
             <p style={{marginTop: '50px',marginBottom: '25px'}}>
-                <img style={{width:' 50px',height: '50px',margin:'auto'}} src="\src\assets\images\last-page.png" />
+                <img style={{width:' 50px',height: '50px',margin:'auto'}} src="images/last-page.png" />
             </p>
             <p className="inter homes">Lorem ipsum dolor sit amet, Consecteluer adipiscing elit.Aenean
                 commodo ligula eget<br/>
@@ -20,7 +20,7 @@ export default function Footer () {
                 <h3 className="home" style={{marginBottom: '24px'}}>Get in touch </h3>
                 <div style={{lineHeight: '2.5'}}>
                     <div className="mail" style={{lineHeight: '1.7'}}>
-                        <div> <img style={{width:' 22px',height: '20px'}} src="\src\assets\images\locc.png" /></div>
+                        <div> <img style={{width:' 22px',height: '20px'}} src="images/locc.png" /></div>
                         <div>
                             <p className="inter homes ">1422 1st street, Santa rosa tCA,94559,<br/>
                                 USA</p>
@@ -28,7 +28,7 @@ export default function Footer () {
                     </div>
                     <div className="mail" style={{lineHeight: '1.5'}}>
                         <div>
-                            <img style={{width: '22px',height: '20px'}} src="\src\assets\images\Email.png" />
+                            <img style={{width: '22px',height: '20px'}} src="images/Email.png" />
                         </div>
                         <div>
                             <p className="inter homes">admin@gmail.com
@@ -37,7 +37,7 @@ export default function Footer () {
                     </div>
                     <div className="mail" style={{lineHeight: '1.5'}}>
                         <div>
-                            <img style={{width: '22px',height: '20px'}} src="\src\assets\images\Phone.png" />
+                            <img style={{width: '22px',height: '20px'}} src="images/Phone.png" />
                         </div>
                         <div>
                             <p className="inter homes"> 002-01008431112</p>
@@ -45,7 +45,7 @@ export default function Footer () {
                     </div>
                     <div className="mail" style={{lineHeight: '1.5'}}>
                         <div>
-                            <img style={{width: '22px',height: '20px'}} src="\src\assets\images\Website.png" />
+                            <img style={{width: '22px',height: '20px'}} src="images/Website.png" />
                         </div>
                         <div>
                             <p className="inter homes">visit our themes</p>
@@ -108,7 +108,7 @@ export default function Footer () {
         </div>
         <div style={{display: 'flex',justifyContent: 'flex-end',marginTop: '50px'}}>
             <button style={{backgroundColor:'white',width: '30px',height: '30px'}}>
-                <img src="\src\assets\images\Collapse Arrow.png" />
+                <img src="images/Collapse Arrow.png" />
             </button>
         </div>
         </div>
