@@ -6,7 +6,7 @@ export default function Header() {
     <>
       <div className="navbar">
         <div className="logo">
-          <img src="\src\assets\images\darna.png" />
+          <img src="images/darna.png" />
         </div>
         <nav>
           <Link to="/" className="box">
@@ -28,7 +28,7 @@ export default function Header() {
           <a href="#" className="box">
             SHORTCODES
           </a>
-          <Link  to="/reac" className="box">         
+          <Link to="/reac" className="box">
             CONTACT US
           </Link>
         </nav>
