@@ -21,10 +21,10 @@ export default function Header() {
             {" "}
             SHOP
           </a>
-          <a href="#" className="box">
+          <Link to="/Blog" className="box">
             {" "}
             BLOG
-          </a>
+          </Link>
           <a href="#" className="box">
             SHORTCODES
           </a>
