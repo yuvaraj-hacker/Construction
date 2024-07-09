@@ -1,0 +1,93 @@
+.pick1{
+    background-image: url(images/shop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+              
+    
+
+}
+
+.pick3{
+    color: #fff;
+    font-size: xx-large;
+    font-weight: 800;
+    text-align: center;
+    padding: 150px;
+    cursor: pointer;
+}
+.pick4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 100px;
+    gap: 10px;
+
+}
+.pick5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+}
+.pick6{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.net1{
+    text-align: center;
+    margin-top: 20PX;
+    cursor: pointer;
+}
+.net2{
+    text-align: center;
+    color: #F6B300;
+    font-weight: 900;
+    cursor: pointer;
+}
+.doubt1{
+    font-weight: 700;
+}
+.doubt2{
+    width: 60px;
+    height: 5px;
+    background-color: #F6B300;
+}
+.raj9{
+    color: #F6B300;
+    cursor: pointer;
+}
+.dude1{
+    width: 60px;
+    height: 60px;
+}
+.flex9{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+.dew1{
+    font-size:smaller;
+    font-weight: lighter;
+}
+.dew2{
+    display: flex;
+}
+.dew3{
+    width: 15px;
+    height: 15px;
+}
+@keyframes shake {
+    0%, 100% { transform: translatey(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translatey(10px); }
+    20%, 20%, 40%, 60% { transform: translatey(10px); }
+}
+
+.shake {
+    display: inline-block;
+    animation: shake 0.5s infinite;
+}

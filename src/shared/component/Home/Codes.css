@@ -8,7 +8,8 @@
     text-align: center;
     font-size: x-large;
     font-weight: 700;
-    color:darkviolet;
+    color:#fff;
+    margin-top: 20px;
 }
 .recent1{
     display: flex;
@@ -25,7 +26,7 @@
     text-align: justify;
     margin: 20px;
     margin-top: 100px;
-    color: blueviolet;
+    color:#fff;
     
 
 }
@@ -41,14 +42,32 @@
     
 }
 .butt0{
-    background-color: aquamarine;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(images/devil.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
 }
 .butt9{
-    background-color:bisque;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(images/devil2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
 }
 
 .butt8{
-    background-color: aquamarine;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(images/devil1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+.double{
+    border-radius: 5px;
+    color: #fff;
+    background-color:blue;
+    width: 100px;
 }
 
 
@@ -65,7 +84,7 @@
 .to1{
     width: 200px;
     height: 200px;
-    clip-path: circle();
+
 }
 .font1{
     margin-top: 20px;
@@ -98,4 +117,46 @@
 }
 .dive1{
     margin-top: 100px;
+}
+.back1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(images/back1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+.back2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 40PX;
+   
+}
+.back3{
+    display: flex;
+    justify-content: center;
+}
+.para2{
+    font-size: 40px;
+    color: #fff;
+ 
+}
+.para3{
+    color: #F6B300;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+}
+.para4{
+    color: #fff;
+    text-align: justify;
+    text-align: center;
+    margin-top: 25PX;
+    line-height: 1.5;
+  
+}
+.with1{
+    width: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }

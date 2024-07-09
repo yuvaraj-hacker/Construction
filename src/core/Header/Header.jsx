@@ -17,10 +17,10 @@ export default function Header() {
             {" "}
             PROJECTS
           </a>
-          <a href="#" className="box">
+          <Link to="/Shop" className="box">
             {" "}
             SHOP
-          </a>
+          </Link>
           <Link to="/Blog" className="box">
             {" "}
             BLOG

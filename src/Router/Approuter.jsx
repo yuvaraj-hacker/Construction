@@ -6,6 +6,7 @@ import Homepage from "../components/HomePage/Homepage";
 import ContactPage from "../components/HomePage/ContactPage";
 import BlogPage from "../components/HomePage/BlogPage";
 import ShortCodes from "../components/HomePage/ShortCodes";
+import Shop from "../components/HomePage/ShopPage";
 
 export default function Approuter () {
 
@@ -17,6 +18,8 @@ export default function Approuter () {
          <Route path="/Reac" element={<ContactPage/>}/>
          <Route path="/Blog" element={<BlogPage/>}/>
          <Route path="/Short" element={<ShortCodes/>}/>
+         <Route path="/Shop" element={<Shop/>}/>
+         
 
 
          

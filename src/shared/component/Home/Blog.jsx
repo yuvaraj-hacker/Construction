@@ -47,7 +47,7 @@ function Blog() {
             </div>
           </section>
 
-          <section className="scroll">
+          <section >
             <div className="functio">
               <div className="dare">
                 <p className="poop">Posted on Jun 15 2024</p>
@@ -150,6 +150,32 @@ function Blog() {
            
                 </p>
 
+            </div>
+            <br/>
+            <br/>
+            <div >
+              <p className="link1">TOP NEWS</p>
+            </div>
+            <br/>
+            <br/>
+            
+            <div className="wear">
+              <div className="wear2">
+                <img  className="tap1" src="images/wear1.jpg" />
+                <p className="small1">JULY 24, 2015<br/>
+                Madrid's Photographer </p>
+              </div>
+              <div  className="wear2">
+                <img  className="tap1" src="images/wear2.jpg" />
+                <p className="small1">JULY 24, 2015<br/>
+                Madrid's Photographer </p>
+              </div>
+              <div  className="wear2">
+                <img   className="tap1" src="images/wear3.jpg" />
+                <p className="small1">JULY 24, 2015<br/>
+                Madrid's Photographer </p>
+              </div>
+              
             </div>
             
             
