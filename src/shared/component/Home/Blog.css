@@ -1,3 +1,7 @@
+body{
+    background-color: #FFF;
+}
+
 .blog{
  
     color: rgb(134, 134, 211);
@@ -102,7 +106,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-} 
+    background-color: #fff;
+    
+
+}
+
 .scroll{
     overflow-y: scroll;
     width: 700px;
@@ -142,6 +150,7 @@
 }
 .width{
     width: 300px;
+    margin-top: 20PX;
 }
 .fire1{
     

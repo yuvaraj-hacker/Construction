@@ -4,8 +4,8 @@ export default function ContactUs() {
    return(
    <>
     
-    <div style={{display: 'flex',justifyContent: 'spaceAround',position: 'relative',top:' 250px',marginBottom:'400px'}}>
-         <div class="container">
+    <div    className='conta1' style={{display: 'flex',justifyContent: 'spaceAround',position: 'relative',top:' 250px',marginBottom:'400px'}}>
+         <div class="container1">
             <h2 style={{color: '#f6b300'}}> Connect with Us</h2>
             <form  action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="ceac0e9f-44a1-4381-981f-6c42eb63566a"/>
@@ -22,10 +22,11 @@ export default function ContactUs() {
                 <input type="submit" value="Submit"/>
             </form>
          </div>
+         <div>
 
-        <div style={{position: 'relative',top: '30px',zIndex:'-1'}} id='test' class='rotating'>
+         </div>
 
-        </div>
+       
 
      </div>
 

@@ -9,7 +9,7 @@ export default function Header() {
           <img src="images/darna.png" />
         </div>
         <nav>
-          <Link to="/" className="box">
+          <Link to="/"  className="box">
             {" "}
             HOME
           </Link>
@@ -25,9 +25,9 @@ export default function Header() {
             {" "}
             BLOG
           </Link>
-          <a href="#" className="box">
+          <Link to="/Short" className="box">
             SHORTCODES
-          </a>
+          </Link>
           <Link to="/reac" className="box">
             CONTACT US
           </Link>

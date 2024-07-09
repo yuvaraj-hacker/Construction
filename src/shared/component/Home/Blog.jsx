@@ -8,7 +8,9 @@ function Blog() {
       <br />
       <br />
       <br />
-
+     
+        
+     
       <div className="whole">
         <div>
           <section>
@@ -154,6 +156,7 @@ function Blog() {
             
         </div>
       </div>
+
     </>
   );
 }

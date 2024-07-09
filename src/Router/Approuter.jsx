@@ -5,6 +5,7 @@ import Homepage from "../components/HomePage/Homepage";
 
 import ContactPage from "../components/HomePage/ContactPage";
 import BlogPage from "../components/HomePage/BlogPage";
+import ShortCodes from "../components/HomePage/ShortCodes";
 
 export default function Approuter () {
 
@@ -15,6 +16,9 @@ export default function Approuter () {
          <Route path="/" element={<Homepage/>}/>
          <Route path="/Reac" element={<ContactPage/>}/>
          <Route path="/Blog" element={<BlogPage/>}/>
+         <Route path="/Short" element={<ShortCodes/>}/>
+
+
          
         </Route>
        </Routes>

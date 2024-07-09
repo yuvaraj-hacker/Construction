@@ -4,7 +4,7 @@ import "../../../../src/App.css";
 export default function Home() {
   return (
     <>
-      <div className="banner">
+      <div  className="banner">
         <div className="content">
           <div></div>
           <div>
@@ -409,7 +409,7 @@ export default function Home() {
         >
           <div className="decan">
             <div
-              className="urge"
+              className="first1"
               style={{
                 width: "30px",
                 height: "15px",
@@ -434,7 +434,7 @@ export default function Home() {
             >
               THEY HAPPY WITH US{" "}
             </p>
-            <img
+            <img 
               style={{
                 width: "38px",
                 height: "3px",

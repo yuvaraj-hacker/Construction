@@ -1,0 +1,101 @@
+.recent{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color:#F6B300;
+}
+.recent4{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+    color:darkviolet;
+}
+.recent1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.recen{
+   
+    margin-top: 50px;
+    text-align: justify;
+    margin: 20px;
+    margin-top: 100px;
+    color: blueviolet;
+    
+
+}
+.get1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
+    color: #F6B300;
+}
+.find1{
+    width: 400px;
+    height: 400px;
+    
+}
+.butt0{
+    background-color: aquamarine;
+}
+.butt9{
+    background-color:bisque;
+}
+
+.butt8{
+    background-color: aquamarine;
+}
+
+
+.round{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.to1{
+    width: 200px;
+    height: 200px;
+    clip-path: circle();
+}
+.font1{
+    margin-top: 20px;
+    text-align: center;
+}
+.child1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.child2{
+    display: flex;
+    justify-content: center;
+}
+.rer1{
+    margin-top: 10px;
+}
+.der1{
+    text-align: center;
+    margin-top: 20PX;
+    margin-bottom: 100PX;
+}
+.fun1{
+    display: flex;
+    flex-direction: column;
+    color: red;
+    gap: 10px;
+    align-items: center;
+    margin-top: 50px;
+}
+.dive1{
+    margin-top: 100px;
+}
