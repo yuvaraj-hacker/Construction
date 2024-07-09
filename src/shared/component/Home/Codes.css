@@ -42,14 +42,14 @@
     
 }
 .butt0{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('/public/images/devil.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('images/devil2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
    
 }
 .butt9{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('images/devil2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('images/devil1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -57,7 +57,7 @@
 }
 
 .butt8{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('images/devil1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('images/devil.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
