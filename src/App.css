@@ -111,6 +111,13 @@ html{
   box-shadow: 7px    7px  #f6b300;
 }
 
+.box:focus{
+  border: 0;
+  box-shadow: 7px    7px  #f6b300;
+  color: #f6b300;
+}
+
+
 
 
 .logo img {
