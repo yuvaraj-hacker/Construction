@@ -42,14 +42,14 @@
     
 }
 .butt0{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('images/devil2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://construction-pi-rosy.vercel.app/images/devil2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
    
 }
 .butt9{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('images/devil1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://construction-pi-rosy.vercel.app/images/devil1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -57,7 +57,7 @@
 }
 
 .butt8{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('images/devil.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://construction-pi-rosy.vercel.app/images/devil.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -119,7 +119,7 @@
     margin-top: 100px;
 }
 .back1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('images/back1.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://construction-pi-rosy.vercel.app/images/back1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
