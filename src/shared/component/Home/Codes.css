@@ -119,7 +119,7 @@
     margin-top: 100px;
 }
 .back1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://construction-pi-rosy.vercel.app/images/back1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://construction-pi-rosy.vercel.app/images/back1.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
