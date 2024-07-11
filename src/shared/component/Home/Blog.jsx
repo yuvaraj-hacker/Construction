@@ -13,10 +13,11 @@ function Blog() {
      
       <div className="whole">
         <div>
-          <section>
+          <section className="vice1">
             <div className="blog">
-              <p>
-                Federal Construction<br/> Contracting{" "}
+              <p >
+                Federal Construction
+                 Contracting{" "}
                 <p style={{ color: "orange" }}>Blog</p>
               </p>
             </div>
@@ -47,7 +48,7 @@ function Blog() {
             </div>
           </section>
 
-          <section >
+          <section className="demn" >
             <div className="functio">
               <div className="dare">
                 <p className="poop">Posted on Jun 15 2024</p>

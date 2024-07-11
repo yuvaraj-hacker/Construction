@@ -19,6 +19,8 @@ export default function Approuter () {
          <Route path="/Blog" element={<BlogPage/>}/>
          <Route path="/Short" element={<ShortCodes/>}/>
          <Route path="/Shop" element={<Shop/>}/>
+        
+
          
 
 

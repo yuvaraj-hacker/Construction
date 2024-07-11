@@ -4,6 +4,13 @@
  
 }
 
+.dark-mode{
+  background-color: #333333;
+  color: #ffffff;
+}
+
+
+
 .html {
   height: -webkit-fill-available;
   
@@ -35,22 +42,57 @@ html{
 .hamburger-menu {
   display: none;
   cursor: pointer;
-  font-size: 2.8rem;
-  color:rgb(117, 99, 99);
+  font-size: 24px;
+  color:black;
 }
 
-@media screen and (max-width: 768px) {
-  .hamburger-menu {
-     display: contents;
-     
-      
+
+
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color:#f6b300;
+    padding: 15px;
+    z-index: 1;
   }
+  .box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:rgb(243, 192, 98);
+   
+  }
+
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+  .navbar .hamburger-menu {
+    position: relative; 
+    left: 60px;
+    top: 15px;
+}
+
+
 }
 @media screen and (max-width: 768px) {
   .logo {
       position: relative; 
      
       right: 50px;
+  }
+  .second0{
+    display: none;
   }
 }
 @keyframes change {
@@ -420,7 +462,18 @@ html{
   font-family: "Inter", sans-serif;
   color: #fff;
   line-height: 1.5;
+  width: 600px;
 }
+
+@media (min-width:0px) and (max-width:530px) {
+  .rare {
+      width: 300px;
+
+
+  }
+
+}
+
 
 .home {
   font-family: "Inter", sans-serif;
@@ -503,6 +556,11 @@ html{
 
 .inter {
   font-family: Inter, sans-serif;
+
+}
+.intra {
+  font-family: Inter, sans-serif;
+  text-align: justify;
 }
 
 .fund {

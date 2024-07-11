@@ -198,32 +198,30 @@ export default function Home() {
               className="rare"
               style={{ MarginBottom: "40px", lineHeight: "1.5" }}
             >
-              <p className="inter">
+              <p className="intra ">
                 {" "}
                 Civil engineering is a professional engineering discipline that
                 deals with the design, construction,
-                <br />
+                
                 and maintenance of the physical and naturally built environment,
                 including such as roads, bridges,
-                <br />
+               
                 canals, dams, airports,, pipelines, structural components of
                 buildings, and railways.
-                <br />
+            
                 Civil engineering is traditionally broken into a number of
                 sub-disciplines.
-                <br />
-              </p>
-            </div>
-            <div className="rare" style={{ lineHeight: "1.5" }}>
-              <p className="inter">
+                <br/>
+                <br/>
+       
                 It is considered the second-oldest engineering discipline
                 after,and it is defined to distinguish
-                <br />
+              
                 from military engineering. Civil engineering can take place in
                 the public sector from
-                <br />
+                
                 municipaldepartments through to federal government agencies.
-                <br />{" "}
+               {" "}
               </p>
             </div>
             <div
@@ -409,7 +407,7 @@ export default function Home() {
         >
           <div className="decan">
             <div
-              className="first1"
+              className="first1 second0"
               style={{
                 width: "30px",
                 height: "15px",

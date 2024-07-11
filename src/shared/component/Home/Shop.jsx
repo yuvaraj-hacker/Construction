@@ -8,185 +8,285 @@ function Shop() {
       <br />
       <br />
       <br />
-      <div className="pick1">
-        <div className="pick2">
-          
-          <p className="pick3"> <span className="shake">  SHOP</span></p>
+      <div className="second">
+        <div
+          className="urge"
+          style={{
+            width: "30px",
+            height: "15px",
+            backgroundColor: "transparent",
+            border: "4px solid #f6b300",
+            borderBottom: "none",
+            marginTop: "25px",
+            marginBottom: "20px",
+            margin: "auto",
+          }}
+        ></div>
+        <h1 className="white">WELCOME TO DARNA CONSTRUCTION </h1>
+        <p style={{ fontFamily: "Inter,sans-serif" }}></p>
+        <img
+          style={{
+            width: "38px",
+            height: "3px",
+            marginBottom: "100px",
+            marginTop: "20px",
+            margin: "auto",
+          }}
+          src="images/DASH.png"
+        />
+      </div>
+      <div className="start3">
+        <div className="copy1">
+          <img src="images/image.webp" />
+          <img className="copy2" src="images/start copy.webp" />
+        </div>
+        <div className="copy3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            expedita dignissimos libero placeat, dolor consequuntur sapiente
+            dicta, est distinctio neque, deleniti quis. Optio officiis sapiente
+            dolorum pariatur accusamus quia deserunt ut facere sint quos. Rem
+            quo, eum inventore voluptate vero numquam praesentium tempora ipsum
+            Non nostrum minus odit sint veniam.lorem50 Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Aliquid expedita dignissimos
+            libero placeat, dolor consequuntur sapiente dicta, est distinctio
+            neque, deleniti quis. Optio officiis sapiente dolorum pariatur
+            accusamus quia deserunt ut facere sint quos. Rem quo, eum inventore
+            voluptate vero numquam praesentium tempora ipsum Non nostrum minus
+            odit sint veniam.lorem50 Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Aliquid expedita dignissimos libero placeat, dolor
+            consequuntur sapiente dicta, est distinctio neque, deleniti quis.
+            Optio officiis sapiente dolorum pariatur accusamus quia deserunt ut
+          </p>
         </div>
       </div>
-      <div className="pick4">
-        <div className="pick5">
-          <div>
-            <img className="pick6" src="images/nailset.jpg" />
-            <p className="net1">Bi.Material Nail Stes</p>
-            <p className="net2">£329.00</p>
+
+      <div className="second">
+        <div
+          className="urge"
+          style={{
+            width: "30px",
+            height: "15px",
+            backgroundColor: "transparent",
+            border: "4px solid #f6b300",
+            borderBottom: "none",
+            marginTop: "25px",
+            marginBottom: "20px",
+            margin: "auto",
+          }}
+        ></div>
+        <h1 className="white">ABOUT FOUNDER</h1>
+        <p style={{ fontFamily: "Inter,sans-serif" }}></p>
+        <img
+          style={{
+            width: "38px",
+            height: "3px",
+            marginBottom: "100px",
+            marginTop: "20px",
+            margin: "auto",
+          }}
+          src="images/DASH.png"
+        />
+      </div>
+
+      <div className="about2">
+        <div className="about3">
+          <img className="abot1" src="images/thomas.jpeg" />
+          <p className="bot4">
+            “When identifying your goals you must first challenge your
+            assumptions.”
+          </p>
+        </div>
+        <div className="fourhun">
+          <p className="bold2">VICTOR THOMAS</p>
+          Dedicated to helping people connect through websites that are
+          consistently top-ranked by Google, Victor has a passion for
+          businesses, marketing, strategy, small businesses and the arts. Before
+          he founded Thomas Digital in 2010, Victor studied theater at New York
+          University Tisch School of the Arts. The son of world-famous opera
+          singer Jess Thomas, he initially hoped to follow in his father
+          footsteps on the stage. But his career took an unexpected turn when he
+          used his knowledge of poker to pen a dating book called The King of
+          Hearts: Playing Your Cards Right in the Game of Love. To promote his
+          new book, Victor knew he needed a website, which he decided to create
+          himself. It was then that he discovered his true passion: marketing
+          and business. The loss of both of his parents at a relatively young
+          age caused Victor to re-examine his own life. Knowing that life is all
+          too short, he decided to focus his personal and professional life on
+          doing things he truly loved with people he enjoyed working and
+          spending time with. He considers his clients to be among his friends
+          and has formed lasting relationships with many of them.
+        </div>
+      </div>
+      <div className="second">
+        <div
+          className="urge"
+          style={{
+            width: "30px",
+            height: "15px",
+            backgroundColor: "transparent",
+            border: "4px solid #f6b300",
+            borderBottom: "none",
+            marginTop: "25px",
+            marginBottom: "20px",
+            margin: "auto",
+          }}
+        ></div>
+        <h1 className="white">EXPERIENCE AND PROJECTS</h1>
+        <p style={{ fontFamily: "Inter,sans-serif" }}></p>
+        <img
+          style={{
+            width: "38px",
+            height: "3px",
+            marginBottom: "100px",
+            marginTop: "20px",
+            margin: "auto",
+          }}
+          src="images/DASH.png"
+        />
+      </div>
+      <div className="divide2">
+        <div>
+          <img className="rate rate7 " src="images/table26.jpg" />
+          <img className="rate rate4 free2" src="images/devil1.jpg" />
+        </div>
+        <div style={{ lineHeight: "1.7" }}>
+          <p style={{ marginTop: "10px" }} className="found">
+            MADRIS PHOTOGRAPHER MARATHON
+          </p>
+          <div
+            style={{
+              display: "flex",
+              gap: "20px",
+              marginTop: "5px",
+              marginBottom: "5px",
+            }}
+          >
+            <div style={{ display: "flex", gap: "5px" }}>
+              <img className="icons" src="images/icons8-calendar-50.png" />
+              <p className="home homes">JULY 19,2015</p>
+            </div>
+            <div style={{ display: "flex", gap: "5px" }}>
+              <img className="icons" src="images/icons8-user-32.png" />
+              <p className="home homes">ADMIN</p>
+            </div>
           </div>
-          <div>
-            <img className="pick6" src="images/some1.jpg" />
-            <p className="net1">Claw Hmamer</p>
-            <p className="net2">£300.00</p>
+          <img
+            style={{
+              width: "38px",
+              height: "3px",
+              marginTop: "5px",
+              marginBottom: "5px",
+            }}
+            src="images/DASH.png"
+          />
+          <p className="inter bod6">
+            In a professional context it often happens 
+            or corporate clients order a publication to 
+            presented with the actual contentLorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Qui sunt enim commodi odit explicabo
+            consequuntur tempore. Maxime error iste dolores doloribus rem
+            expedita accusantium sint voluptatibus beatae blanditiis voluptates
+            ab recusandae tenetur, suscipit, omnis provident. Quaerat iusto
+            assumenda aliquid asperiores veritatis dolor repudiandae, reiciendis
+            nostrum ducimus eligendi voluptas earum tempore facere illo nemo
+            alias quod, sequi doloremque. A tempora, minima, similique
+            perspiciatis nisi dignissimos, porro aperiam dicta quis mollitia at
+            consectetur quas officiis eum dolorem veritatis ullam asperiores
+            architecto? Quia magnam quod repellat est, unde dolor sunt sit quas
+            molestias dicta necessitatibus adipisci aliquam excepturi minima ea
+            pariatur vero accusamus.[...] 
+          </p>
+       
+        </div>
+      </div>
+      <div className="divide6">
+       
+        <div style={{ lineHeight: "1.7" }}>
+          <p style={{ marginTop: "10px" }} className="found">
+           ICELANDS VOLCANO TIMELAPSE
+          </p>
+          <div
+            style={{
+              display: "flex",
+              gap: "20px",
+              marginTop: "5px",
+              marginBottom: "5px",
+            }}
+          >
+            <div style={{ display: "flex", gap: "5px" }}>
+              <img className="icons" src="images/icons8-calendar-50.png" />
+              <p className="home homes">JULY 19,2015</p>
+            </div>
+            <div style={{ display: "flex", gap: "5px" }}>
+              <img className="icons" src="images/icons8-user-32.png" />
+              <p className="home homes">ADMIN</p>
+            </div>
           </div>
-          <div>
-            <img className="pick6" src="images/some2.jpg" />
-            <p className="net1">Combination Hammer</p>
-            <p className="net2">£400.00</p>
-          </div>
-          <div>
-            <img className="pick6" src="images/some3.jpg" />
-            <p className="net1">Cutting Pliers</p>
-            <p className="net2">£114.00</p>
-          </div>
-          <div>
-            <img className="pick6" src="images/some4.jpg" />
-            <p className="net1">Multi Tool </p>
-            <p className="net2">£223.00</p>
-          </div>
-          <div>
-            <img className="pick6" src="images/some5.jpg" />
-            <p className="net1">Multi Tracker</p>
-            <p className="net2">£231.00</p>
-          </div>
-          <div>
-            <img className="pick6" src="images/some6.jpg" />
-            <p className="net1">Pointed Trowel</p>
-            <p className="net2">£150.00</p>
-          </div>
-          <div>
-            <img className="pick6" src="images/some7.jpg" />
-            <p className="net1">Folding Key</p>
-            <p className="net2">£250.00</p>
-          </div>
-          <div>
-            <img className="pick6" src="images/some8.jpg" />
-            <p className="net1">Small Trigger</p>
-            <p className="net2">£100.00</p>
-          </div>
-          <div>
-            <img className="pick6" src="images/some9.jpg" />
-            <p className="net1">Lithium Key</p>
-            <p className="net2">£170.00</p>
-          </div>
-          <div>
-            <img className="pick6" src="images/some10.jpg" />
-            <p className="net1">Iron plater</p>
-            <p className="net2">£117.00</p>
-          </div>
-          <div>
-            <img className="pick6" src="images/some0.jpg" />
-            <p className="net1">Metal Blogger</p>
-            <p className="net2">£120.00</p>
-          </div>
+          <img
+            style={{
+              width: "38px",
+              height: "3px",
+              marginTop: "5px",
+              marginBottom: "5px",
+            }}
+            src="images/DASH.png"
+          />
+          <p className="inter bod6">
+            In a professional context it often happens 
+            or corporate clients order a publication to 
+            presented with the actual contentLorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Qui sunt enim commodi odit explicabo
+            consequuntur tempore. Maxime error iste dolores doloribus rem
+            expedita accusantium sint voluptatibus beatae blanditiis voluptates
+            ab recusandae tenetur, suscipit, omnis provident. Quaerat iusto
+            assumenda aliquid asperiores veritatis dolor repudiandae, reiciendis
+            nostrum ducimus eligendi voluptas earum tempore facere illo nemo
+            alias quod, sequi doloremque. A tempora, minima, similique
+            perspiciatis nisi dignissimos, porro aperiam dicta quis mollitia at
+            consectetur quas officiis eum dolorem veritatis ullam asperiores
+            architecto? Quia magnam quod repellat est, unde dolor sunt sit quas
+            molestias dicta necessitatibus adipisci aliquam excepturi minima ea
+            pariatur vero accusamus.[...] 
+          </p>
+    
         </div>
         <div>
-          <p className="doubt1">SEARCH PRODUCTS</p>
-          <div className="doubt2"></div>
-          <input
-            className="width"
-            type="text"
-            name="Search"
-            placeholder="Search Products"
-          />
-          <br />
-          <br />
-          <br />
-
-          <p className="doubt1">PRODUCT CATEGORIES</p>
-          <div className="doubt2"></div>
-          <br />
-          <br />
-          <details>
-            <summary className="raj9">HAND TOOLS</summary>
-            <details>
-              <summary>HAMMERS</summary>
-            </details>
-            <details>
-              <summary>MULTI TOOLS</summary>
-            </details>
-            <details>
-              <summary>PLIERS</summary>
-            </details>
-          </details>
-          <br />
-          <br />
-          <details>
-            <summary className="raj9">POWER TOOLS</summary>
-            <details>
-              <summary>DRILLS</summary>
-            </details>
-            <details>
-              <summary>GRINDERS</summary>
-            </details>
-            <details>
-              <summary>HEAT GUNS</summary>
-            </details>
-            <details>
-              <summary>SANDERS</summary>
-            </details>
-          </details>
-          <br />
-          <br />
-          <details>
-            <summary className="raj9">SAFETY AND SECURITY</summary>
-          </details>
-          <br />
-          <br />
-          <details>
-            <summary className="raj9">UNCATEGORIZED</summary>
-          </details>
-          <br />
-          <br />
-
-          <div>
-            <p className="doubt1">TOP RATED PRODUCTS</p>
-            <div className="doubt2"></div>
-            <br />
-            <br />
-          </div>
-          <div className="flex9">
-            <img className="dude1" src="images/drill1.jpg" />
-            <div>
-              <p className="dew1">Reversible Drill</p>
-              <div className="dew2">
-                <img  className="dew3" src="images/icons8star.png" />
-                <img  className="dew3" src="images/icons8star.png" />
-                <img   className="dew3" src="images/icons8star.png" />
-                <img  className="dew3" src="images/icons8star.png" />
-                <img  className="dew3" src="images/icons8star.png" />
-              </div>
-            </div>
-          </div>
-          <br />
-
-          <div className="flex9">
-            <img className="dude1" src="images/drill2.jpg" />
-            <div>
-              <p className="dew1">Claw Hammer</p>
-              <div className="dew2">
-                <img  className="dew3" src="images/icons8star.png" />
-                <img   className="dew3" src="images/icons8star.png" />
-                <img   className="dew3" src="images/icons8star.png" />
-                <img  className="dew3"  src="images/icons8star.png" />
-                <img   className="dew3" src="images/icons8star.png" />
-                
-              </div>
-            </div>
-          </div>
-          <br />
-
-          <div className="flex9">
-            <img className="dude1" src="images/drill3.jpg" />
-            <div>
-              <p className="dew1">Cutting Pliers</p>
-              <div className="dew2">
-                <img  className="dew3" src="images/icons8star.png" />
-                <img  className="dew3" src="images/icons8star.png" />
-                <img  className="dew3" src="images/icons8star.png" />
-                <img  className="dew3" src="images/icons8star.png" />
-                <img  className="dew3" src="images/icons8star.png" />
-              </div>
-            </div>
-          </div>
+          <img className="rate rate7" src="images/table27.jpg" />
+          <img className="rate rate4 free2" src="images/devil2.jpg" />
         </div>
+      </div>
+      <div class="contact-sec">
+        <div class="contact-form">
+        <div
+          className="urge"
+          style={{
+            width: "30px",
+            height: "15px",
+            backgroundColor: "transparent",
+            border: "4px solid #f6b300",
+            borderBottom: "none",
+            marginTop: "25px",
+            marginBottom: "20px",
+            margin: "auto",
+          }}
+        ></div>
+          <p className="con3">CONTACT US </p>
+        
+          <form action="submit.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <div></div>
       </div>
     </>
   );

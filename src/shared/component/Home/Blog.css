@@ -9,14 +9,16 @@ body{
     font-weight: 900;
     line-height: 1.1;
 }
+
 .cards{
     margin-bottom: 100px;
     margin-top: 100px;
 }
 .card{
-     width: 700px;
+    width: 700px;
     height: 450px; 
 } 
+
 .cardss{
     display: flex;
   
@@ -26,6 +28,9 @@ body{
     height: 500px;
     
 
+}
+.demn{
+    width: 500px;
 }
 .dare{
     width: 600px;
@@ -182,14 +187,21 @@ body{
     color: rgb(99, 55, 156);
     font-weight: 600;
 }
-@media screen and (max-width: 792px) {
-    .scroll{
-      position: relative;
-      left: 50px;
-       overflow-y: scroll;
-       width: 300px;
-       height: 500px;
-     
-        
+
+
+  @media screen and (max-width: 792px) {
+    
+    .demn{
+        width: 0px;
+    }
+    .card{
+        width: 360px;
+    }
+    .lorem{
+        width: 300px;
+    }
+   
+    .blog{
+        font-size: 20px;
     }
   }
