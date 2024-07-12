@@ -3,13 +3,57 @@
   padding: 0;
  
 }
+.checkbo1{
+  position: relative;
+  left: 50px;
+  top: 15px;
 
-.dark-mode{
-  background-color: #333333;
-  color: #ffffff;
+}
+.checkbo2{
+  position: relative;
+  left: 350px;
+  top: 15px;
+  color: #f6b300;
 }
 
 
+/* App.css */
+
+/* Light Mode */
+:root {
+  --background-color: #FFFFFF;
+  --text-color: #000000;
+  --accent-color: #f6b300;
+}
+
+/* Dark Mode */
+.dark-mode {
+  --background-color: #1a1a1a;
+  --text-color: #FFFFFF;
+  --accent-color: #f6b300;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add specific styles for dark mode components here */
+.dark-mode .navbar {
+  background-color: #333333;
+}
+
+/* Add more dark mode specific styles as needed */
+
+
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+  /* Add more styles as needed */
+}
 
 .html {
   height: -webkit-fill-available;
@@ -26,6 +70,14 @@ html{
   height: 100vh;
   height: -webkit-fill-available;
   
+}
+.arrow1{
+  width: 200px;
+  height: 20px;
+
+}
+.arow2{
+  position: fixed;
 }
 
 .banner {
@@ -94,6 +146,7 @@ html{
   .second0{
     display: none;
   }
+
 }
 @keyframes change {
   0% {
@@ -543,7 +596,9 @@ html{
   color: #aaaec3;
   font-family: Inter, sans-serif;
 }
-
+.checkbo1{
+  cursor: pointer;
+}
 .setting {
   position: absolute;
   top: 1%;
@@ -655,6 +710,23 @@ html{
 @media (min-width:0px) and (max-width:1000px) {
   nav {
       display: none;
+  }
+  .checkbo1{
+    display: none;
+  }
+  .checkbo2{
+    display: none;
+  }
+
+
+}
+@media (min-width:0px) and (max-width:1620px) {
+
+  .checkbo1{
+    display: none;
+  }
+  .checkbo2{
+    display: none;
   }
 
 

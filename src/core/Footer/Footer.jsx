@@ -106,9 +106,9 @@ export default function Footer () {
                 </div>
             </div>
         </div>
-        <div style={{display: 'flex',justifyContent: 'flex-end',marginTop: '50px'}}>
+        <div  style={{display: 'flex',justifyContent: 'flex-end',marginTop: '50px'}}>
             <button style={{backgroundColor:'white',width: '30px',height: '30px'}}>
-                <img src="images/Collapse Arrow.png" />
+                <img   className="arrow1"  src="images/Collapse Arrow.png" />
             </button>
         </div>
         </div>

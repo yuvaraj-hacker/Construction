@@ -3,16 +3,18 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false); // State for dark mode
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle("dark-mode"); // Toggle dark mode class on body
+  };
   return (
     <>
-      
       <div className="navbar">
         <div className="logo">
           <img src="images/darna.png" alt="Logo" />
@@ -46,14 +48,12 @@ export default function Header() {
         <div className="hamburger-menu" onClick={toggleMenu}>
           &#9776;
         </div>
-        {/* <label className="toggle-switch">
-          <input type="checkbox" id="modeToggle"/>
-          <span className="toggle-slider"> </span>
-          
-        </label> */}
+        <p className="checkbo2">Change Theme</p>
+        <label className="checkbo1">
+          <input type="checkbox" id="modeToggle" onChange={toggleDarkMode} />
+          <span className="toggle-slider"></span>
+        </label>
       </div>
-
-    
     </>
   );
 }

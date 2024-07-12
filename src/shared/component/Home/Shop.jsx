@@ -150,36 +150,7 @@ function Shop() {
           <img className="rate rate7 " src="images/table26.jpg" />
           <img className="rate rate4 free2" src="images/devil1.jpg" />
         </div>
-        <div style={{ lineHeight: "1.7" }}>
-          <p style={{ marginTop: "10px" }} className="found">
-            MADRIS PHOTOGRAPHER MARATHON
-          </p>
-          <div
-            style={{
-              display: "flex",
-              gap: "20px",
-              marginTop: "5px",
-              marginBottom: "5px",
-            }}
-          >
-            <div style={{ display: "flex", gap: "5px" }}>
-              <img className="icons" src="images/icons8-calendar-50.png" />
-              <p className="home homes">JULY 19,2015</p>
-            </div>
-            <div style={{ display: "flex", gap: "5px" }}>
-              <img className="icons" src="images/icons8-user-32.png" />
-              <p className="home homes">ADMIN</p>
-            </div>
-          </div>
-          <img
-            style={{
-              width: "38px",
-              height: "3px",
-              marginTop: "5px",
-              marginBottom: "5px",
-            }}
-            src="images/DASH.png"
-          />
+        
           <p className="inter bod6">
             In a professional context it often happens 
             or corporate clients order a publication to 
@@ -199,39 +170,10 @@ function Shop() {
           </p>
        
         </div>
-      </div>
+     
       <div className="divide6">
        
-        <div style={{ lineHeight: "1.7" }}>
-          <p style={{ marginTop: "10px" }} className="found">
-           ICELANDS VOLCANO TIMELAPSE
-          </p>
-          <div
-            style={{
-              display: "flex",
-              gap: "20px",
-              marginTop: "5px",
-              marginBottom: "5px",
-            }}
-          >
-            <div style={{ display: "flex", gap: "5px" }}>
-              <img className="icons" src="images/icons8-calendar-50.png" />
-              <p className="home homes">JULY 19,2015</p>
-            </div>
-            <div style={{ display: "flex", gap: "5px" }}>
-              <img className="icons" src="images/icons8-user-32.png" />
-              <p className="home homes">ADMIN</p>
-            </div>
-          </div>
-          <img
-            style={{
-              width: "38px",
-              height: "3px",
-              marginTop: "5px",
-              marginBottom: "5px",
-            }}
-            src="images/DASH.png"
-          />
+      
           <p className="inter bod6">
             In a professional context it often happens 
             or corporate clients order a publication to 
@@ -250,12 +192,12 @@ function Shop() {
             pariatur vero accusamus.[...] 
           </p>
     
-        </div>
+   
         <div>
           <img className="rate rate7" src="images/table27.jpg" />
           <img className="rate rate4 free2" src="images/devil2.jpg" />
         </div>
-      </div>
+    </div>
       <div class="contact-sec">
         <div class="contact-form">
         <div
