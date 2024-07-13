@@ -1,0 +1,40 @@
+/* src/App.css */
+.App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .posts {
+    margin-top: 20px;
+  }
+  
+  .blog-post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .blog-post img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  form {
+    margin: 20px 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+  }
+  
