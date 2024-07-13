@@ -198,38 +198,8 @@ function Shop() {
           <img className="rate rate4 free2" src="images/devil2.jpg" />
         </div>
     </div>
-      <div class="contact-sec">
-        <div class="contact-form">
-        <div
-          className="urge"
-          style={{
-            width: "30px",
-            height: "15px",
-            backgroundColor: "transparent",
-            border: "4px solid #f6b300",
-            borderBottom: "none",
-            marginTop: "25px",
-            marginBottom: "20px",
-            margin: "auto",
-          }}
-        ></div>
-          <p className="con3">CONTACT US </p>
-        
-          <form action="submit.php" method="post">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-        <div></div>
-      </div>
+    
+  
     </>
   );
 }

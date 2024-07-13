@@ -1,40 +1,76 @@
 /* src/App.css */
 .App {
+  text-align: center;
+  padding: 20px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.blog-post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  width: 50%;
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+}
+
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-post button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.blog-post small {
+  display: block;
+  margin-top: 10px;
+  color: gray;
+}
+
+form {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+}
+
+
+
+  /* ************************************************************************ */
+  .app1{
+    font-size: 40px;
     text-align: center;
-    padding: 20px;
   }
-  
-  .posts {
-    margin-top: 20px;
+  .fin1{
+    width: 50%;
+    background-color: #F6B300;
+    border-radius: 20px;
   }
-  
-  .blog-post {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px 0;
-  }
-  
-  .blog-post img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  form {
-    margin: 20px 0;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    padding: 10px 20px;
-  }
-  

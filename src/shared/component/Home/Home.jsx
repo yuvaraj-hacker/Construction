@@ -371,6 +371,7 @@ export default function Home() {
             </div>
           </div>
           <div className="button">
+            <Link to="/Project">
             <button
               style={{
                 backgroundColor: "#f6b300",
@@ -383,6 +384,7 @@ export default function Home() {
               {" "}
               VIEW ALL
             </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -28,17 +28,17 @@ export default function Header() {
             {" "}
             ABOUT
           </Link>
-          <a href="#projects" className="box" onClick={toggleMenu}>
+          <Link to="/Project" className="box" onClick={toggleMenu}>
             {" "}
             PROJECTS
-          </a>
+          </Link>
 
           <Link to="/Blog" className="box" onClick={toggleMenu}>
             {" "}
-            BLOG
+               BLOG
           </Link>
           <Link to="/Short" className="box" onClick={toggleMenu}>
-            SHORTCODES
+           TEAMS 
           </Link>
 
           <Link to="/reac" className="box" onClick={toggleMenu}>
