@@ -58,7 +58,7 @@ export default function Home() {
         <div
           className="urge"
           style={{
-            width: "30px",
+            width: "60px",
             height: "15px",
             backgroundColor: "transparent",
             border: "4px solid #f6b300",
@@ -69,15 +69,15 @@ export default function Home() {
           }}
         ></div>
         <h1 className="white">WHAT WE OFFER</h1>
-        <p style={{ fontFamily: "Inter,sans-serif" }}>
+        <p style={{ fontFamily: "Inter,sans-serif", marginBottom:"10px" }}>
           Always dedicated and devoted
         </p>
         <img
           style={{
-            width: "38px",
+            width: "60px",
             height: "3px",
             marginBottom: "100px",
-            marginTop: "20px",
+            marginTop: "17px " ,
             margin: "auto",
           }}
           src="images/DASH.png"
@@ -326,7 +326,7 @@ export default function Home() {
             <div
               className="urge"
               style={{
-                width: "30px",
+                width: "60px",
                 height: "15px",
                 backgroundColor: "transparent",
                 border: "4px solid #f6b300",
@@ -344,7 +344,7 @@ export default function Home() {
             </div>
             <div>
               <img
-                style={{ width: "38px", height: "3px", margin: "auto" }}
+                style={{ width: "60px", height: "3px", margin: "auto" }}
                 src="images/DASH.png"
               />
             </div>
@@ -411,15 +411,15 @@ export default function Home() {
             <div
               className="first1 second0"
               style={{
-                width: "30px",
+                width: "60px",
                 height: "15px",
                 backgroundColor: "transparent",
                 border: "4px solid #f6b300",
                 borderBottom: "none",
                 position: "relative",
-                left: "310px",
+                left: "300px",
                 marginTop: "25px",
-                marginBottom: "20px",
+              
               }}
             ></div>
             <h1 className="white black">WHAT PEOPLE SAID</h1>
@@ -429,17 +429,17 @@ export default function Home() {
                 fontFamily: "Inter,sans-serif",
                 color: "#dddddd",
                 marginBottom: "10px",
-                marginTop: "10px",
+             
               }}
             >
               THEY HAPPY WITH US{" "}
             </p>
             <img 
               style={{
-                width: "38px",
+                width: "60px",
                 height: "3px",
-                marginBottom: "55px",
-                marginTop: "15px",
+                marginBottom: "60px",
+              
                 margin: "auto",
               }}
               src="images/DASH.png"
@@ -479,7 +479,7 @@ export default function Home() {
           <div
             className="urge"
             style={{
-              width: "30px",
+              width: "60px",
               height: "15px",
               backgroundColor: "transparent",
               border: "4px solid #f6b300",
@@ -490,10 +490,10 @@ export default function Home() {
             }}
           ></div>
           <h1 className="white">OUR PROCESS</h1>
-          <p className="Inter">STYLE 2</p>
+          <p className="Inter"></p>
           <img
             style={{
-              width: "38px",
+              width: "60px",
               height: "3px",
               marginBottom: "100px",
               marginTop: "20px",
@@ -557,7 +557,7 @@ export default function Home() {
           <div
             className="urge"
             style={{
-              width: "30px",
+              width: "60px",
               height: "15px",
               backgroundColor: "transparent",
               border: "4px solid #f6b300",
@@ -571,7 +571,7 @@ export default function Home() {
           <p className="inter">CONNECT WITH US ALL ABOUT DARNA</p>
           <img
             style={{
-              width: "38px",
+              width: "60px",
               height: "3px",
               marginBottom: "50px",
               marginTop: "20px",

@@ -7,19 +7,27 @@ import "../Home/Blog.css";
 
 const App = () => {
   const [posts, setPosts] = useState([]);
+  const [subscribers, setSubscribers] = useState([]);
+  const [email, setEmail] = useState("");
 
-  // Load posts from localStorage when the app initializes
+  // Load posts and subscribers from localStorage when the app initializes
   useEffect(() => {
     const storedPosts = localStorage.getItem("posts");
     if (storedPosts) {
       setPosts(JSON.parse(storedPosts));
     }
+
+    const storedSubscribers = localStorage.getItem("subscribers");
+    if (storedSubscribers) {
+      setSubscribers(JSON.parse(storedSubscribers));
+    }
   }, []);
 
-  // Save posts to localStorage whenever the posts state changes
+  // Save posts and subscribers to localStorage whenever the state changes
   useEffect(() => {
     localStorage.setItem("posts", JSON.stringify(posts));
-  }, [posts]);
+    localStorage.setItem("subscribers", JSON.stringify(subscribers));
+  }, [posts, subscribers]);
 
   const addPost = (post) => {
     setPosts([post, ...posts]); // Add new post at the beginning of the array
@@ -29,6 +37,16 @@ const App = () => {
     setPosts(posts.filter((_, index) => index !== indexToDelete));
   };
 
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    if (email && !subscribers.includes(email)) {
+      setSubscribers([...subscribers, email]);
+      alert("Thank you for subscribing!");
+    } else {
+      alert("You are already subscribed or invalid email!");
+    }
+    setEmail("");
+  };
   return (
     <>
       <br />
@@ -36,7 +54,7 @@ const App = () => {
       <br />
       <br />
       <div className="main5">
-        <div> 
+        <div>
           <div className="blog">
             <p>
               Federal Construction Contracting{" "}
@@ -48,14 +66,15 @@ const App = () => {
             <BlogForm addPost={addPost} />
             <div className="posts">
               {posts.map((post, index) => (
-                <BlogPost
-                  key={index}
-                  title={post.title}
-                  content={post.content}
-                  image={post.image}
-                  date={post.date}
-                  onDelete={() => deletePost(index)}
-                />
+                <div key={index} className="blog-post">
+                  <small>{post.date}</small>
+                  <BlogPost
+                    title={post.title}
+                    content={post.content}
+                    image={post.image}
+                    onDelete={() => deletePost(index)}
+                  />
+                </div>
               ))}
             </div>
           </div>
@@ -93,14 +112,21 @@ const App = () => {
             </a>
             <p className="link1">Subscribe to this blog</p>
           </div>
-          <input
-            className="faf1"
-            type="text"
-            name="Search"
-            placeholder="Enter Your Email Address.... "
-          />
-          <br />
-          <button className="got1">SUBSCRIBE</button>
+          <form onSubmit={handleSubscribe}>
+            <input
+              className="faf1"
+              type="email"
+              name="email"
+              placeholder="Enter Your Email Address...."
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <br />
+            <button className="got1" type="submit">
+              SUBSCRIBE
+            </button>
+          </form>
           <br />
           <br />
 

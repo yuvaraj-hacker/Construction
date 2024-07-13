@@ -2,10 +2,14 @@
     text-align: center;
     font-size: 40px;
     font-weight: 700;
+    color: #F6B300;
 }
 .clss1{
-    text-align: center;
-    margin: 20px;
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+
  
 }
 .poto1{
@@ -38,6 +42,7 @@
     width: 400px;
 
 }
+
 @media (min-width:0px) and (max-width:930px) {
     .poto2{
         display: none;

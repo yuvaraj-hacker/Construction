@@ -26,7 +26,7 @@ const BlogForm = ({ addPost }) => {
     <form onSubmit={handleSubmit}>
       <div>
         <label>Title:</label>
-        <input
+        <input className='title4'
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
@@ -49,7 +49,7 @@ const BlogForm = ({ addPost }) => {
           accept="image/*"
         />
       </div>
-      <button type="submit">Add Post</button>
+      <button className="button8"   type="submit">Add Post</button>
     </form>
     </div>
   );

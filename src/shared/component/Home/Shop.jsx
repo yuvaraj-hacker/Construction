@@ -12,7 +12,7 @@ function Shop() {
         <div
           className="urge"
           style={{
-            width: "30px",
+            width: "60px",
             height: "15px",
             backgroundColor: "transparent",
             border: "4px solid #f6b300",
@@ -26,7 +26,7 @@ function Shop() {
         <p style={{ fontFamily: "Inter,sans-serif" }}></p>
         <img
           style={{
-            width: "38px",
+            width: "60px",
             height: "3px",
             marginBottom: "100px",
             marginTop: "20px",
@@ -65,7 +65,7 @@ function Shop() {
         <div
           className="urge"
           style={{
-            width: "30px",
+            width: "60px",
             height: "15px",
             backgroundColor: "transparent",
             border: "4px solid #f6b300",
@@ -79,7 +79,7 @@ function Shop() {
         <p style={{ fontFamily: "Inter,sans-serif" }}></p>
         <img
           style={{
-            width: "38px",
+            width: "60px",
             height: "3px",
             marginBottom: "100px",
             marginTop: "20px",
@@ -122,7 +122,7 @@ function Shop() {
         <div
           className="urge"
           style={{
-            width: "30px",
+            width: "60px",
             height: "15px",
             backgroundColor: "transparent",
             border: "4px solid #f6b300",
@@ -136,7 +136,7 @@ function Shop() {
         <p style={{ fontFamily: "Inter,sans-serif" }}></p>
         <img
           style={{
-            width: "38px",
+            width: "60px",
             height: "3px",
             marginBottom: "100px",
             marginTop: "20px",

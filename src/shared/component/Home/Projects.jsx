@@ -8,29 +8,31 @@ function Projects() {
       <br />
       <br />
       <br />
-      <p className="dec1"> PROJECT STATUS REPORT</p>
-      <p className="clss1">
-        Welcome to the Darna Construction Project Status Report. This report
-        provides an overview of the project's current status, including progress
-        made since the last update, key milestones achieved, and any critical
-        issues or risks that need to be addressed. The purpose of this report is
-        to keep all stakeholders informed about the project's trajectory, ensure
-        alignment with project objectives, and highlight any areas where
-        additional support or resources may be required. Since our last update,
-        the project has made significant strides, with several major milestones
-        successfully reached. This report will detail these achievements,
-        outline the tasks and deliverables completed, and provide an updated
-        timeline and budget status. Additionally, it will cover any emerging
-        risks and issues, along with the measures being taken to mitigate them.
-        We remain committed to delivering this project on time, within scope,
-        and on budget, and we appreciate the ongoing support and collaboration
-        from all stakeholders.
-      </p>
+      <div className="backe1">
+        <p className="dec1"> PROJECT STATUS REPORT</p>
+        <p className="clss1">
+          Welcome to the Darna Construction Project Status Report. This report
+          provides an overview of the project's current status, including
+          progress made since the last update, key milestones achieved, and any
+          critical issues or risks that need to be addressed. The purpose of
+          this report is to keep all stakeholders informed about the project's
+          trajectory, ensure alignment with project objectives, and highlight
+          any areas where additional support or resources may be required. Since
+          our last update, the project has made significant strides, with
+          several major milestones successfully reached. This report will detail
+          these achievements, outline the tasks and deliverables completed, and
+          provide an updated timeline and budget status. Additionally, it will
+          cover any emerging risks and issues, along with the measures being
+          taken to mitigate them. We remain committed to delivering this project
+          on time, within scope, and on budget, and we appreciate the ongoing
+          support and collaboration from all stakeholders.
+        </p>
+      </div>
       <div className="second">
         <div
           className="urge"
           style={{
-            width: "30px",
+            width: "60px",
             height: "15px",
             backgroundColor: "transparent",
             border: "4px solid #f6b300",
@@ -44,7 +46,7 @@ function Projects() {
         <p style={{ fontFamily: "Inter,sans-serif" }}></p>
         <img
           style={{
-            width: "38px",
+            width: "60px",
             height: "3px",
             marginBottom: "100px",
             marginTop: "20px",
@@ -55,8 +57,10 @@ function Projects() {
       </div>
       <div className="dev1">
         <div>
-          <img className="poto1" src="images/success.webp" />
-          <img className="poto2" src="images/successfull.jpg" />
+          <img className="poto1" src="images/successfull.jpg" />
+          <video controls autoPlay className="poto2">
+            <source src="images/success.mp4" type="video/mp4"></source>
+          </video>
         </div>
         <div>
           <p className="dev2">
@@ -72,11 +76,12 @@ function Projects() {
           </p>
         </div>
       </div>
+
       <div className="second">
         <div
           className="urge"
           style={{
-            width: "30px",
+            width: "60px",
             height: "15px",
             backgroundColor: "transparent",
             border: "4px solid #f6b300",
@@ -90,7 +95,7 @@ function Projects() {
         <p style={{ fontFamily: "Inter,sans-serif" }}></p>
         <img
           style={{
-            width: "38px",
+            width: "60px",
             height: "3px",
             marginBottom: "100px",
             marginTop: "20px",
@@ -115,9 +120,8 @@ function Projects() {
         </div>
         <div>
           <img className="poto1" src="images/ongoing.webp" />
-          <video  controls autoPlay className="poto3">
-            <source src="images/ongoings.mp4" type="video/mp4" >
-            </source>
+          <video controls autoPlay className="poto3">
+            <source src="images/ongoings.mp4" type="video/mp4"></source>
           </video>
         </div>
       </div>
@@ -125,7 +129,7 @@ function Projects() {
         <div
           className="urge"
           style={{
-            width: "30px",
+            width: "60px",
             height: "15px",
             backgroundColor: "transparent",
             border: "4px solid #f6b300",
@@ -139,7 +143,7 @@ function Projects() {
         <p style={{ fontFamily: "Inter,sans-serif" }}></p>
         <img
           style={{
-            width: "38px",
+            width: "60px",
             height: "3px",
             marginBottom: "100px",
             marginTop: "20px",
@@ -150,8 +154,10 @@ function Projects() {
       </div>
       <div className="dev1">
         <div>
-          <img className="poto1" src="images/upcoming.webp" />
-          <img className="poto2" src="images/upcoming2.png" />
+          <img className="poto1" src="images/upcoming2.png" />
+          <video controls autoPlay className="poto2">
+            <source src="images/upcome.mp4" type="video/mp4"></source>
+          </video>
         </div>
         <div>
           <p className="dev2">
