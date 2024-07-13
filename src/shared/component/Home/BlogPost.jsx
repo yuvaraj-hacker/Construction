@@ -1,4 +1,4 @@
-// src/components/BlogPost.js
+// src/Home/BlogPost.jsx
 import React from 'react';
 
 const BlogPost = ({ title, content, image, date, onDelete }) => {

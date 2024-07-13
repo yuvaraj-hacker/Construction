@@ -71,7 +71,6 @@ function Projects() {
             exercitationem nobis quam assumenda fugit, inventore sapiente?
           </p>
         </div>
-     
       </div>
       <div className="second">
         <div
@@ -116,7 +115,10 @@ function Projects() {
         </div>
         <div>
           <img className="poto1" src="images/ongoing.webp" />
-          <img className="poto3" src="images/ongoing1.jpg" />
+          <video  controls autoPlay className="poto3">
+            <source src="images/ongoings.mp4" type="video/mp4" >
+            </source>
+          </video>
         </div>
       </div>
       <div className="second">

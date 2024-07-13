@@ -1,4 +1,4 @@
-/* src/App.css */
+/* src/Home/BlogForm.css */
 .App {
   text-align: center;
   padding: 20px;
@@ -23,7 +23,7 @@
 
 .blog-post img {
   max-width: 100%;
-  height: auto;
+  height: 40vh;
 }
 
 .blog-post button {
@@ -52,7 +52,7 @@ label {
   margin-bottom: 5px;
 }
 
-input, textarea {
+input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -62,15 +62,33 @@ button {
   padding: 10px 20px;
 }
 
+.app1 {
+  font-size: 24px;
+  font-weight: bold;
+}
 
 
   /* ************************************************************************ */
-  .app1{
-    font-size: 40px;
-    text-align: center;
-  }
   .fin1{
-    width: 50%;
-    background-color: #F6B300;
-    border-radius: 20px;
+    width: 50% !important;
+    background-color: #F6B300 !important;
+    border-radius: 20px !important;
+  }
+  .main5{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center;
+    gap: 60px;
+
+  }
+  .App{
+   background-color: lightgrey;
+   margin-top: 50px;
+  }
+  .area1{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+
   }
