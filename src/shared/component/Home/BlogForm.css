@@ -10,10 +10,7 @@
   align-items: center;
   margin-top: 20px;
 }
-
 .blog-post {
-
-
   position: relative;
   text-align: left;
   background-color:azure;
@@ -29,26 +26,13 @@
   border: none;
   cursor: pointer;
 }
-
-.blog-post small {
-  display: block;
-  margin-top: 10px;
-  color: gray;
-}
-
 form {
   margin: 20px 0;
 }
-
 label {
   display: block;
   margin-bottom: 5px;
 }
- 
-
-
-
-
 input {
   width: 100%;
   padding: 10px;
@@ -67,7 +51,7 @@ input {
 }
 
 
-  /* ************************************************************************ */
+  /* *********************************************************************** */
   .fin1{
     width: 50% !important;
     background-color: #F6B300 !important;
@@ -105,9 +89,14 @@ input {
     font-size: 20px;
  
     color: black;
+    margin-bottom: 100px;
    
   }
   .nan3{
     font-size: medium;
     font-weight: 900;
+  }
+  .sde1{
+    width: 600px;
+    height: 400px;
   }

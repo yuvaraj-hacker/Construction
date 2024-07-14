@@ -1,16 +1,17 @@
-// src/App.js
 import React, { useState, useEffect } from "react";
+
 import BlogPost from "../Home/BlogPost.jsx";
 import BlogForm from "../Home/BlogForm.jsx";
 import "../Home/BlogForm.css";
 import "../Home/Blog.css";
+
 
 const App = () => {
   const [posts, setPosts] = useState([]);
   const [subscribers, setSubscribers] = useState([]);
   const [email, setEmail] = useState("");
 
-  // Load posts and subscribers from localStorage when the app initializes
+
   useEffect(() => {
     const storedPosts = localStorage.getItem("posts");
     if (storedPosts) {
