@@ -21,8 +21,6 @@ const BlogForm = ({ addPost }) => {
 
   return (
     <div>
-      
-   
     <form onSubmit={handleSubmit}>
       <div>
         <label>Title:</label>
@@ -49,7 +47,7 @@ const BlogForm = ({ addPost }) => {
           accept="image/*"
         />
       </div>
-      <button className="button8"   type="submit">Add Post</button>
+      <button className="button8" type="submit">Add Post</button>
     </form>
     </div>
   );

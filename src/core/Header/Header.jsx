@@ -48,10 +48,10 @@ export default function Header() {
         <div className="hamburger-menu" onClick={toggleMenu}>
           &#9776;
         </div>
-        <p className="checkbo2">Change Theme</p>
+        <p className="checkbo2">Dark Theme</p>
         <label className="checkbo1">
           <input type="checkbox" id="modeToggle" onChange={toggleDarkMode} />
-          <span className="toggle-slider"></span>
+         
         </label>
       </div>
     </>

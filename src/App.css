@@ -5,15 +5,15 @@
 }
 .checkbo1{
   position: relative;
-  left: 30px;
-  top: 15px;
+  left: 90px;
+  top: 16px;
 
 }
 .checkbo2{
   position: relative;
-  left: 350px;
+  left: 390px;
   top: 15px;
-  color: #f6b300;
+  color:black;
 }
 
 
@@ -41,7 +41,7 @@ body {
 
 /* Add specific styles for dark mode components here */
 .dark-mode .navbar {
-  background-color: #333333;
+  background-color:#DDDDDD;
 }
 
 /* Add more dark mode specific styles as needed */
