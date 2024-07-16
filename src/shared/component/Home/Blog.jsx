@@ -132,7 +132,7 @@ function Blog() {
             <br/>
             <br/>
             <div>
-                <p  className="link1">Recent Updates </p>
+                <p className="link1">Recent Updates </p>
                 <br/>
                 <p className="fast1">
                 Projections for retail leasing<br/>

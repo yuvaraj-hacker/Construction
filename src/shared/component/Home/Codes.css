@@ -11,10 +11,10 @@
     color:#fff;
     margin-top: 20px;
 }
-.recent1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.rent1{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
     gap: 30px;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -153,7 +153,7 @@
     text-align: center;
     margin-top: 25PX;
     line-height: 1.5;
-  
+
 }
 .with1{
     width: 300px;

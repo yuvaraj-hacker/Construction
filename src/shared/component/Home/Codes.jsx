@@ -170,7 +170,7 @@ function Codes() {
           src="images/DASH.png"
         />
       </div>
-      <div className="recent1">
+      <div className="rent1">
         <button className="butt0">
           <div className="find1">
             <p className="recent4">MADRIS PHOTOGRAPHER MARATHON</p>

@@ -19,7 +19,10 @@ export default function Header() {
         <div className="logo">
           <img src="images/darna.png" alt="Logo" />
         </div>
-        <nav className={`nav-links ${isOpen ? "show" : ""}`}>
+        <div className="top6">
+          
+     
+        <nav  className={`nav-links ${isOpen ? "show" : ""}`}>
           <Link to="/" className="box" onClick={toggleMenu}>
             {" "}
             HOME
@@ -35,24 +38,32 @@ export default function Header() {
 
           <Link to="/Blog" className="box" onClick={toggleMenu}>
             {" "}
-               BLOG
+            BLOG
           </Link>
           <Link to="/Short" className="box" onClick={toggleMenu}>
-           TEAMS 
+            TEAMS
           </Link>
 
           <Link to="/reac" className="box" onClick={toggleMenu}>
             CONTACT US
           </Link>
         </nav>
+        </div>
+
         <div className="hamburger-menu" onClick={toggleMenu}>
           &#9776;
         </div>
         <p className="checkbo2">Dark Theme</p>
         <label className="checkbo1">
           <input type="checkbox" id="modeToggle" onChange={toggleDarkMode} />
-         
         </label>
+        <div>
+          <button className="var4">
+            <Link to="/Login" onClick={toggleMenu}>
+              LOGIN
+            </Link>
+          </button>
+        </div>
       </div>
     </>
   );
