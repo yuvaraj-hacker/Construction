@@ -56,10 +56,12 @@ export default function Header() {
         <p className="checkbo2">Dark Theme</p>
         <label className="checkbo1">
           <input type="checkbox" id="modeToggle" onChange={toggleDarkMode} />
+        
         </label>
+ 
         <div>
           <button className="var4">
-            <Link to="/Login" onClick={toggleMenu}>
+            <Link to="/Main" onClick={toggleMenu}>
               LOGIN
             </Link>
           </button>
