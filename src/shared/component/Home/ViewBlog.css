@@ -1,4 +1,9 @@
 .blogs2{
     display: flex;
-    gap:50px;
+    gap:150px;
+}
+.snow9{
+    margin-top: 100px;
+    width: 1500px;
+    height: 2000px;
 }
