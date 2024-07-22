@@ -31,6 +31,7 @@ const Sidebar = ({ children }) => {
             path: "/Cre",
             name: "Create Blog",
             icon: <FaRegChartBar />
+          
         },
         {
             path: "/Dashboard",
@@ -49,7 +50,7 @@ const Sidebar = ({ children }) => {
                 </div>
                 {
                     menuItem.map((item, index) => (
-                        <NavLink to={item.path} key={index} className="link" activeClassName="active">
+                        <NavLink to={item.path} key={index} className="link" >
                             <div className="icon">{item.icon}</div>
                             <div style={{ display: isOpen ? "block" : "none" }} className="link_text">{item.name}</div>
                         </NavLink>

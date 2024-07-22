@@ -141,13 +141,14 @@ const Register = () => {
       if (response.data.message) {
         setShowOtpField(true);
         setSuccess(true);
-        alert('OTP sent to your email. Check your inbox.');
+        alert('OTP sent to your email.Check your inbox.');
       } else {
         setError(response.data.message);
       }
     } catch (error) {
       console.error('Error during registration:', error.message);
       setError('An error occurred during registration. Please try again.');
+      
     }
   };
 

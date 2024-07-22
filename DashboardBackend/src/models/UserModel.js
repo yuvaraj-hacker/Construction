@@ -2,7 +2,6 @@ import mongoose from "mongoose";
 import db from "../config/db/db.js";
 
 const UserSchema = mongoose.Schema({
-    // Name : String,
     Email: String,
     Password : String,
     OTP : String,

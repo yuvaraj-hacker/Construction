@@ -19,7 +19,7 @@ const sendMail = (data) => {
             from: process.env.NODEMAILER_EMAIL,
             to: data.Email,
             subject: 'OTP Registration',
-            text: 'Your Eduon Registration otp is :' + otp
+            text: 'your darna construction one time password:' + otp
         };
 
         transporter.sendMail(mailOptions, function (error, info) {

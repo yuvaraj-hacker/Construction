@@ -23,6 +23,7 @@ const Login = () => {
       if (response.data.token) {
         console.log("Login successful.");
         login(response.data.token);
+        alert('Login Successfull')
         navigate("/");
       } else {
         console.log("Login failed:", response.data.message);
