@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes,} from "react-router-dom";
 import Main from "../core/Main/Main";
 import Homepage from "../components/HomePage/Homepage";
 
@@ -9,11 +9,13 @@ import Shop from "../components/HomePage/ShopPage";
 import ProjectPage from "../components/HomePage/ProjectPage";
 
 import Sidebar from "../shared/component/Home/Sidebar";
-import CreateBlog from "../shared/component/Home/CreateBlog";
-import ViewBlog from "../shared/component/Home/ViewBlog";
+
 import Login from "../shared/component/Home/Login";
 import Register from "../shared/component/Home/Register";
 import { AuthProvider } from "../shared/component/Home/Authcontext";
+import CreateBlog from "../shared/component/Home/CreateBlog";
+import ViewBlog from "../shared/component/Home/ViewBlog";
+
 
 export default function Approuter() {
   return (
@@ -29,13 +31,15 @@ export default function Approuter() {
             <Route path="/Project" element={<ProjectPage />} />
 
             <Route path="/Blog" element={<Sidebar />} />
-            <Route path="/Cre" element={<CreateBlog />} />
-            <Route path="/Dashboard" element={<ViewBlog />} />
+             <Route path="/Cre" element={<CreateBlog />} />
+            <Route path="/Dashboard" element={<ViewBlog />} /> 
             <Route path="/Login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            
           </Route>
         </Routes>
       </AuthProvider>
     </BrowserRouter>
   );
 }
+

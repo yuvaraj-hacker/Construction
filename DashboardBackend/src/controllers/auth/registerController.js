@@ -57,14 +57,14 @@ import sendMail from '../../services/mailservice.js';
 
 export const register = async (req, res) => {
   try {
-    const { Email, Password } = req.body;
+    const { Email, Password , Username } = req.body;
     console.log('Request Body:', req.body);
     const findUser = await User.findOne({ Email });
     if (!findUser) {
       const { otp } = await sendMail({ Email, recipient: Email });
       const hashPassword = await bcrypt.hash(Password, 10);
       console.log('Generated OTP:', otp);
-      const newUser = new User({ Email, Password: hashPassword, OTP: otp });
+      const newUser = new User({ Email, Password: hashPassword, OTP: otp ,Username});
       await newUser.save();
       res.status(200).send({ message: 'Successfully registered. OTP sent to your email.' });
     } else {

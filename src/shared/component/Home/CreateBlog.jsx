@@ -1,8 +1,9 @@
 import React, { useState, useRef, useMemo, useEffect } from "react";
 import axios from "axios";
-import Sidebar from "../Home/Sidebar";
+
 import "../Home/ViewBlog.css";
 import JoditEditor from "jodit-react";
+import Sidebar from "../Home/Sidebar";
 
 function CreateBlog() {
   const editor = useRef(null);
@@ -10,6 +11,8 @@ function CreateBlog() {
   const [content, setContent] = useState("");
   const [date, setDate] = useState("");
   const [posts, setPosts] = useState([]);
+ 
+
   const placeholder = "Start typing...";
 
   const config = useMemo(

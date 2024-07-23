@@ -124,6 +124,7 @@ import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [otp, setOtp] = useState('');
@@ -134,7 +135,7 @@ const Register = () => {
 
   const handleRegister = async () => {
     try {
-      const payload = { Email: email, Password: password };
+      const payload = { Email: email, Password: password , Username : username};
       console.log('Request Payload:', payload);
       const response = await axios.post(`${API_URL}/api/apiregister`, payload);
 
@@ -182,6 +183,13 @@ const Register = () => {
               Registration successful. Please check your email for the OTP.
             </div>
           )}
+           <input
+            type="text"
+            placeholder="Username"
+            className="input-field"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
           <input
             type="email"
             placeholder="Email"
