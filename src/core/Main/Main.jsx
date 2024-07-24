@@ -6,7 +6,7 @@ import '../../../src/App.css'
 
 
 export default function Main () {
-
+    
     return(
        <>
             <Header/>

@@ -1,9 +1,7 @@
 import React, { useState, useRef, useMemo, useEffect } from "react";
 import axios from "axios";
-
-import "../Home/ViewBlog.css";
+import './ViewBlog.css'
 import JoditEditor from "jodit-react";
-import Sidebar from "../Home/Sidebar";
 
 function CreateBlog() {
   const editor = useRef(null);
@@ -11,7 +9,6 @@ function CreateBlog() {
   const [content, setContent] = useState("");
   const [date, setDate] = useState("");
   const [posts, setPosts] = useState([]);
- 
 
   const placeholder = "Start typing...";
 
@@ -49,10 +46,6 @@ function CreateBlog() {
 
   return (
     <div className="blogs2">
-      <div>
-        <Sidebar />
-      </div>
-
       <div className="fon3">
         <div className="create-blog-container">
           <h2 className="head0">Create a New Blog Post</h2>
@@ -73,15 +66,13 @@ function CreateBlog() {
             ref={editor}
             value={content}
             config={config}
-            tabIndex={1}
             onBlur={(newContent) => setContent(newContent)}
-            onChange={(newContent) => {}}
           />
           <button onClick={createPost} className="createPostButton">
             Create Post
           </button>
         </div>
-        <div className="post-list">
+        {/* <div className="post-list">
           <h2 className="createPostButton">Blog Posts</h2>
           {posts.map((post, index) => (
             <div key={index} className="post">
@@ -92,7 +83,7 @@ function CreateBlog() {
               <div dangerouslySetInnerHTML={{ __html: post.content }} />
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
