@@ -1,46 +1,34 @@
-import React, { useState, useRef, useMemo, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
-import './ViewBlog.css'
-import JoditEditor from "jodit-react";
+import SunEditor from "suneditor-react";
+import 'suneditor/dist/css/suneditor.min.css'; // Import SunEditor styles
+import './ViewBlog.css';
 
 function CreateBlog() {
-  const editor = useRef(null);
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
-  const [date, setDate] = useState("");
-  const [posts, setPosts] = useState([]);
+  const [formData, setFormData] = useState({ title: "", content: "", date: "", name: "" });
+  const [error, setError] = useState("");
 
-  const placeholder = "Start typing...";
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
-  const config = useMemo(
-    () => ({
-      readonly: false,
-      placeholder: placeholder,
-    }),
-    [placeholder]
-  );
+  const handleContentChange = (content) => {
+    setFormData((prevState) => ({ ...prevState, content }));
+  };
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:4000/api/apiBlog")
-      .then((response) => setPosts(response.data))
-      .catch((error) => console.log(error));
-  }, []);
-
-  const createPost = () => {
-    if (title && content && date) {
-      const newPost = { title, content, date };
+  const publishPost = () => {
+    const { title, content, date, name } = formData;
+    if (title && content && date && name) {
       axios
-        .post("http://localhost:4000/api/apiBlog", newPost)
-        .then((response) => {
-          setPosts([...posts, response.data]);
-          setTitle("");
-          setContent("");
-          setDate("");
+        .post("http://localhost:4000/api/apiBlog", { ...formData, published: true })
+        .then(() => {
+          setFormData({ title: "", content: "", date: "", name: "" });
+          alert("Post published successfully!");
         })
-        .catch((error) => console.log(error));
+        .catch((error) => setError("Error publishing post"));
     } else {
-      alert("Please fill in all fields.");
+      setError("Please fill in all fields.");
     }
   };
 
@@ -48,45 +36,62 @@ function CreateBlog() {
     <div className="blogs2">
       <div className="fon3">
         <div className="create-blog-container">
-          <h2 className="head0">Create a New Blog Post</h2>
+          <h2 className="head0">Create a New Blog</h2>
+          {error && <p className="error">{error}</p>}
           <input
             type="text"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            name="name"
+            value={formData.name}
+            onChange={handleInputChange}
+            placeholder="Your Name"
+            className="nameInput"
+          />
+          <input
+            type="text"
+            name="title"
+            value={formData.title}
+            onChange={handleInputChange}
             placeholder="Title"
             className="titleInput"
           />
           <input
             type="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
+            name="date"
+            value={formData.date}
+            onChange={handleInputChange}
             className="dateInput"
           />
-          <JoditEditor
-            ref={editor}
-            value={content}
-            config={config}
-            onBlur={(newContent) => setContent(newContent)}
+          <SunEditor
+            setContents={formData.content}
+            onChange={handleContentChange}
+            setOptions={{
+              height: 200,
+              buttonList: [
+                ['undo', 'redo', 'bold', 'italic', 'underline', 'strike', 'subscript', 'superscript'],
+                ['font', 'fontSize', 'formatBlock'],
+                ['paragraphStyle', 'blockquote'],
+                ['fontColor', 'hiliteColor', 'textStyle'],
+                ['removeFormat'],
+                '/',
+                ['outdent', 'indent'],
+                ['align', 'horizontalRule', 'list', 'table'],
+                ['link', 'image', 'video'],
+                ['fullScreen', 'showBlocks', 'codeView'],
+                ['preview', 'print']
+              ]
+            }}
           />
-          <button onClick={createPost} className="createPostButton">
-            Create Post
+          <button onClick={publishPost} className="createPostButton">
+            Publish Post
           </button>
         </div>
-        {/* <div className="post-list">
-          <h2 className="createPostButton">Blog Posts</h2>
-          {posts.map((post, index) => (
-            <div key={index} className="post">
-              <h3 className="head4">{post.title}</h3>
-              <p>
-                <strong>Date:</strong> {post.date}
-              </p>
-              <div dangerouslySetInnerHTML={{ __html: post.content }} />
-            </div>
-          ))}
-        </div> */}
       </div>
     </div>
   );
 }
 
 export default CreateBlog;
+
+
+
+

@@ -1,9 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import CreateBlog from "../AdShared/CreateBlog";
-import ViewBlog from "../AdShared/ViewBlog";
-import DashBoard from "../AdShared/DashBoard";
+
 import AdMain from "../AdCore/AdMain";
+
+import PublishedPosts from "../AdShared/PublishedPosts";
+import ManageBlogs from "../AdShared/ManageBlogs";
 // import Sidebar from "../AdShared/SideBar";
 
 function AdRouter() {
@@ -11,14 +13,11 @@ function AdRouter() {
     <>
       <Routes>
         <Route element={<AdMain />}>
-      
-
           <Route path="/Create" element={<CreateBlog />} />
-          <Route path="/View" element={<ViewBlog />} />
-          <Route path="/dashboard" element={<DashBoard />} />
-         
+          <Route path="/View" element={<ManageBlogs/>} />
+          <Route path="/dashboard" element={<PublishedPosts/>} />
+        
         </Route>
-     
       </Routes>
     </>
   );

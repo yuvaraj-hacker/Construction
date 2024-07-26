@@ -24,7 +24,7 @@ const Login = () => {
         console.log("Login successful.");
         login(response.data.token);
         alert('Login Successfull')
-        navigate("/");
+        navigate("/Dash/Create");
       } else {
         console.log("Login failed:", response.data.message);
         alert(response.data.message);
@@ -59,13 +59,13 @@ const Login = () => {
         <button className="register-button" onClick={handleLogin}>
           Login
         </button>
-        <p className="login-link">
+        {/* <p className="login-link">
           Don't have an account?{" "}
           <Link to="/register">
             {" "}
             <b> Register</b>
           </Link>
-        </p>
+        </p> */}
       </div>
     </div>
   );

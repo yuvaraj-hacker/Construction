@@ -33,26 +33,27 @@ const Side = () => {
   const handleLogout = () => {
     // Perform logout logic here
     // For example, clear user session or authentication state
-    navigate("/");
+    alert("Logout successful!");
+    navigate("/Posts");
   };
 
   return (
     <div className="sidebar">
-      <img src="../images/darna.png"   alt="darna"/>
+      <img src="../images/darna.png" alt="darna" />
       <ul className="mt-12">
-        <p className="casd">
-          <Link to="/Dash/dashboard">Dashboard</Link>
-        </p>
-        <p className="casd">
-          <Link to="/Dash/Create">Create Blog</Link>
-        </p>
-        <p className="casd">
-          <Link to="/Dash/View">View Blog</Link>
-        </p>
+        <Link to="/Dash/Create">
+          <p className="casd">Create Blog</p>
+        </Link>
+        <Link to="/Dash/dashboard">
+          <p className="casd">Published Blog</p>
+        </Link>
+        <Link to="/Dash/View">
+          <p className="casd">Manage Blog</p>
+        </Link>
         <li>
           <button
             onClick={handleLogout}
-            className=" hover:bg-red-600 text-start casd1"
+            className="hover:bg-red-600 text-start casd1"
           >
             Logout
           </button>

@@ -32,20 +32,21 @@ export default function Header() {
             <Link to="/Project" className="box" onClick={toggleMenu}>
               PROJECTS
             </Link>
-            <Link to="/Blog" className="box" onClick={toggleMenu}>
-              BLOG
-            </Link>
             <Link to="/Short" className="box" onClick={toggleMenu}>
               TEAMS
             </Link>
+            <Link to="/Posts" className="box" onClick={toggleMenu}>
+              BLOG
+            </Link>
+        
             <Link to="/reac" className="box" onClick={toggleMenu}>
               CONTACT US
             </Link>
-            <button className="var4">
+            {/* <button className="var4">
               <Link to="/Login" onClick={toggleMenu}>
                 LOGIN
               </Link>
-            </button>
+            </button> */}
           </nav>
         </div>
 

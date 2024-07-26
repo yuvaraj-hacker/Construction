@@ -18,7 +18,7 @@
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
-    color:rgb(228, 162, 76);
+    color: #28a745;
   
     margin-bottom: 50px;
 }
@@ -35,12 +35,15 @@
     margin-bottom: 50px;
 }
 .createPostButton{
-    width:50%;
+    width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 10px;
-    background-color:burlywood;
-
+    background-color: #28a745;
+}
+.createPostButton:hover{
+  color: #fff;
+ background-color: #218838;
 }
 .head4{
     font-size: 60px;
@@ -68,7 +71,7 @@
 
 .create-blog-container {
    position: relative;
-   top: 100px;
+   top: 25px;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -128,85 +131,298 @@
     background-color: #0056b3;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* ViewBlog.css */
-
-.blog-list-container, .create-blog-container, .blog-details-container {
-    width: 80%;
-    margin: 0 auto;
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
   }
   
-  .blog-card {
-    border: 1px solid #ddd;
-    padding: 16px;
-    margin-bottom: 16px;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+  .header {
+    font-size: 24px;
+    margin-bottom: 20px;
   }
   
-  .blog-card h3 {
-    margin-top: 0;
+  .error {
+    color: red;
   }
   
-  .read-more {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .read-more:hover {
-    text-decoration: underline;
-  }
-  
-  .form-group {
-    margin-bottom: 16px;
-  }
-  
-  .form-input {
+  .posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Even spacing between cards */
     width: 100%;
-    padding: 8px;
-    margin-top: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    max-width: 1200px;
   }
   
-  .create-post-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
+  .post-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Ensure content doesn't overflow */
+  }
+  
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .post-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .post-date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .post-content {
+    font-size: 16px;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Limit content to 5 lines */
+    -webkit-box-orient: vertical;
+    margin-bottom: auto; /* Ensure the content takes as much space as possible */
+  }
+  
+  .read-more-button {
+    background-color: #28a745;
+    color: #fff;
     border: none;
+    padding: 10px 20px;
     border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Align the button to the start */
+  }
+  
+  .read-more-button:hover {
+    background-color: #218838;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    overflow: auto;
+    max-height: 90%;
+    border-radius: 12px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
     cursor: pointer;
   }
   
-  .create-post-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .editor-container {
-    margin-bottom: 16px;
-  }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* blog management  */
+
+
+
+
+.manage-blogs {
+  padding: 20px;
+}
+
+.posts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.posts-table th,
+.posts-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.posts-table th {
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+.edit-button,
+.delete-button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.nameInput{
+  width: 500px;
+}
+
+
+
+/* 
+******************************** */
+
+
+
+/* .edit2{
+  font-size: x-large;
+  font-weight: 600;
+  color: #dc3545;
+}
+
+.modal-content{
+  width: 1000px !important;
+  height: 400px;
+}
+
+.fonte{
+  width: 1000px;
+} */
+
+
+
+/* Container for the modal background */
+.edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensures the modal is on top of other content */
+}
+
+/* Modal content container */
+.modal-content {
+  background: #fff; /* White background for the modal */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+  width: 100%;
+  max-width: 600px; /* Max width of the modal */
+  max-height: 80vh; /* Maximum height of the modal */
+  overflow-y: auto; /* Adds scroll if content overflows */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: relative; /* To position the close button */
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888; /* Light gray color for the close button */
+}
+
+.close:hover {
+  color: #333; /* Darker color on hover */
+}
+
+/* Header styling */
+.edit2 {
+  font-size: 1.5em;
+  margin-bottom: 20px; /* Space below the header */
+  color: #333; /* Darker color for the header */
+}
+
+/* Form styling */
+.fonte {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form elements */
+}
+
+/* Label styling */
+.fonte label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Space between label and input */
+}
+
+/* Input and textarea styling */
+.fonte input,
+.fonte textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: #007bff; /* Primary button color */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}

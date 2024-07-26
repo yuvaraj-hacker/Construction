@@ -12,12 +12,9 @@ import { AuthProvider } from "../shared/component/Home/Authcontext";
 
 import AdRouter from "../Admin/AdRouter/AdRouter";
 import Admin from "../shared/component/Home/Admin";
+import Blog from "../shared/component/Home/Blog";
 
-import DashBoard from "../Admin/AdShared/DashBoard";
-import ViewBlog from "../Admin/AdShared/ViewBlog";
-import CreateBlog from "../Admin/AdShared/CreateBlog";
-import Side from "../Admin/AdShared/Side";
-import AdMain from "../Admin/AdCore/AdMain";
+
 
 export default function Approuter() {
   return (
@@ -31,7 +28,7 @@ export default function Approuter() {
             <Route path="/Short" element={<ShortCodes />} />
             <Route path="/Shop" element={<Shop />} />
             <Route path="/Project" element={<ProjectPage />} />
-
+            <Route path="/Posts" element={<Blog/>}/>
             {/* <Route path="/Blog" element={<Sidebar />} /> */}
             {/* <Route path="/Cre" element={<CreateBlog />} />
             <Route path="/Dashboard" element={<ViewBlog />} /> */}
@@ -39,7 +36,7 @@ export default function Approuter() {
             <Route path="/register" element={<Register />} />
           </Route>
           <Route path="/Admin" element={<Admin />} />
-         
+
           <Route path="/Dash/*" element={<AdRouter />} />
           {/* <Route path="/Create" element={<CreateBlog />} />
           <Route path="/View" element={<ViewBlog />} />

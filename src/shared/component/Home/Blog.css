@@ -168,8 +168,10 @@ body{
     color:#fff;
 }
 .width{
-    width: 300px;
-    margin-top: 20PX;
+    width: 265px;
+    margin-right: 10px;
+  
+  
 }
 .fire1{
     
@@ -204,6 +206,7 @@ body{
     .blog{
         font-size: 20px;
     }
+   
   }
 
   
@@ -212,10 +215,7 @@ body{
 .container{
     display:flex;
 }
-main{
-    width: 100%;
-    padding: 20px;
-}
+
 .sidebar{
     background: #000;
     color: #fff;
@@ -256,6 +256,116 @@ main{
     font-size: 20px;
 }
 
-
+.fasd1{
+    display: flex;
+}
+.fasd2{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
 /* ************************************************ */
+.post-title1{
+    font-size: x-large;
+    font-weight: 600;
+}
 
+.header1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.error1{
+    color: red;
+    text-align: center;
+}
+.posts-container1{
+    border:1px solid #f1f1f1;
+   
+}
+
+  
+  .post-card1 {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 800px;
+    min-height: 500px;
+    max-height: 1000px;
+  }
+
+  
+  .post-date1 {
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .post-content1 {
+    margin-bottom: 20px;
+   
+    
+  }
+  .mand{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+
+ 
+  }
+
+
+
+
+
+
+
+
+.blogl{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+    color: Orange ;
+}
+
+
+  /* 88888888888888888888 */
+
+  .blog-container.blur {
+    filter: blur(5px);
+    pointer-events: none;
+  }
+  
+  .modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+  }
+  
+  .close-modal {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
