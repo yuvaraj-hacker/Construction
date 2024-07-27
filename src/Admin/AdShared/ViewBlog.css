@@ -2,6 +2,7 @@
     display: flex;
     flex: 1;
     gap:150px;
+    
 }
 .snow9{
     margin-top: 100px;
@@ -9,6 +10,7 @@
     height: 2000px;
 }
 .fon3{
+ 
     width: 100%;
     margin-top: 100px;
 
@@ -70,6 +72,8 @@
 
 
 .create-blog-container {
+  width: 2000px !important;
+  height: 600px;
    position: relative;
    top: 25px;
     max-width: 800px;
@@ -426,3 +430,4 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0056b3; /* Darker shade on hover */
 }
+

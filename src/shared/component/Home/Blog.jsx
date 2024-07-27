@@ -61,14 +61,14 @@ function Blog() {
             </div>
           </div>
           <div>
-            <div className="fasd1">
+            <div   onClick={toggleLoginModal} className="fasd1">
               <input
                 className="width"
                 type="text"
                 name="Search"
                 placeholder="Write your blog"
               />
-              <FiEdit className="fasd2" onClick={toggleLoginModal} />
+              <FiEdit className="fasd2" />
             </div>
 
            

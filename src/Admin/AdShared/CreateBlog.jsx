@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import axios from "axios";
 import SunEditor from "suneditor-react";
 import 'suneditor/dist/css/suneditor.min.css'; // Import SunEditor styles
@@ -7,6 +7,7 @@ import './ViewBlog.css';
 function CreateBlog() {
   const [formData, setFormData] = useState({ title: "", content: "", date: "", name: "" });
   const [error, setError] = useState("");
+  const editorRef = useRef(); // Create a ref for the SunEditor instance
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -30,6 +31,11 @@ function CreateBlog() {
     } else {
       setError("Please fill in all fields.");
     }
+  };
+
+  // Callback function to receive the SunEditor instance
+  const getSunEditorInstance = (sunEditor) => {
+    editorRef.current = sunEditor;
   };
 
   return (
@@ -64,8 +70,9 @@ function CreateBlog() {
           <SunEditor
             setContents={formData.content}
             onChange={handleContentChange}
+            getSunEditorInstance={getSunEditorInstance} // Pass the callback function
             setOptions={{
-              height: 200,
+              height: 400,
               buttonList: [
                 ['undo', 'redo', 'bold', 'italic', 'underline', 'strike', 'subscript', 'superscript'],
                 ['font', 'fontSize', 'formatBlock'],
@@ -80,6 +87,10 @@ function CreateBlog() {
                 ['preview', 'print']
               ]
             }}
+          
+            defaultValue="<p>Welcome to the blog editor!</p>" // Set default value
+            width="100%" // Set width
+            height="400px" // Set height
           />
           <button onClick={publishPost} className="createPostButton">
             Publish Post
@@ -91,7 +102,6 @@ function CreateBlog() {
 }
 
 export default CreateBlog;
-
 
 
 

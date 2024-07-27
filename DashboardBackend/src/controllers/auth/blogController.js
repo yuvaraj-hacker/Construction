@@ -16,6 +16,8 @@ export const getBlogs = (req, res) => {
 
 
 
+
+
 export const updateBlog = (req, res) => {
   const { id } = req.params;
   const updatedData = req.body;
@@ -45,6 +47,21 @@ export const deleteBlog = (req, res) => {
     })
     .catch(err => res.status(400).json({ error: err.message }));
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
